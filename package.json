@@ -1,0 +1,21 @@
+{
+  "name": "lambda-sql-challenge",
+  "version": "1.0.0",
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/volkmar-carrillo/lambda-sql-challenge.git"
+  },
+  "scripts": {
+    "start": "subpkg run start",
+    "build": "subpkg run build",
+    "lint:fix": "subpkg run lint:fix",
+    "prettier:write": "subpkg run prettier:write"
+  },
+  "subPackages": [
+    "filter-transform-products"
+  ],
+  "devDependencies": {
+    "subpackage": "^1.1.0"
+  }
+}
