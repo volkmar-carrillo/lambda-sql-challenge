@@ -10,10 +10,12 @@
     "start": "subpkg run start",
     "build": "subpkg run build",
     "lint:fix": "subpkg run lint:fix",
-    "prettier:write": "subpkg run prettier:write"
+    "prettier:write": "subpkg run prettier:write",
+    "postinstall": "subpkg install"
   },
   "subPackages": [
-    "filter-transform-products"
+    "filter-transform-products",
+    "sort-people-by-age"
   ],
   "devDependencies": {
     "subpackage": "^1.1.0"

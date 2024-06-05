@@ -18,3 +18,13 @@ functions:
       - http:
           path: filter-transform-products
           method: post
+  
+  master-sort-people-by-age:
+    handler: dist/src/index.sortPeopleByAge
+    timeout: 30
+    package:
+      artifact: sort-people-by-age/dist/sort-people-by-age.zip
+    events:
+      - http:
+          path: sort-people-by-age
+          method: post        
